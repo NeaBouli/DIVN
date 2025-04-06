@@ -155,3 +155,8 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 ## Contact
 
 Questions or suggestions? Create an issue or contact us at gigdiver@gmx.de.
+
+## Konfiguration
+Bevor du die Anwendung startest, musst du den Platzhalter für die Infura-Projekt-ID ersetzen:
+- In der Datei `DIVN/application/src/index.js` ersetze `'YOUR_INFURA_PROJECT_ID'` durch deine eigene Infura-Projekt-ID.
+- Um eine Infura-Projekt-ID zu erhalten, erstelle ein kostenloses Konto auf [Infura](https://infura.io) und lege ein neues Projekt an.
