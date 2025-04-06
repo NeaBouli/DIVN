@@ -8,7 +8,6 @@ class Home {
         this.level = 0;
     }
 
-    // Connect to wallet and update UI
     async connect() {
         try {
             this.account = await connectWallet();
@@ -20,14 +19,12 @@ class Home {
         }
     }
 
-    // Verify another user (example address for now)
     async verify() {
         if (!this.account) {
             document.getElementById('status').innerText = "Please connect wallet first";
             return;
         }
         try {
-            // Example address - replace with user input in real app
             const userToVerify = "0x1234567890123456789012345678901234567890";
             await handleVerifyLevel1(userToVerify);
             document.getElementById('status').innerText = `Verified ${userToVerify} successfully!`;
@@ -37,14 +34,12 @@ class Home {
         }
     }
 
-    // Update UI with current status
     updateUI() {
         document.getElementById('account').innerText = this.account || "Not connected";
         document.getElementById('level').innerText = this.level;
         document.getElementById('status').innerText = "Connected successfully";
     }
 
-    // Render method (simplified for now - integrate with React framework later)
     render() {
         return `
             <div>
@@ -59,8 +54,5 @@ class Home {
     }
 }
 
-// Singleton instance for simplicity
 const home = new Home();
-
-// Export for use in app
 module.exports = home;

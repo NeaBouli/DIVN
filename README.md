@@ -154,4 +154,4 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 
 ## Contact
 
-Questions or suggestions? Create an issue or contact us at [your-email@example.com].
+Questions or suggestions? Create an issue or contact us at gigdiver@gmx.de.
